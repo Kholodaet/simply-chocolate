@@ -163,6 +163,64 @@
     width: 614px;
     height: 400px;
   }
+  /* loved */
+  .loved {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .loved-title {
+    margin-bottom: 90px;
+  }
+
+  .loved-list {
+    gap: 58px 16px;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  .loved-item {
+    width: calc((100% - 16px) / 2);
+    padding: 56px 16px 16px 16px;
+  }
+  /* footer */
+
+  .footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .footer-heading {
+    font-size: 28px;
+  }
+
+  .footer-soc {
+    margin-right: 50px;
+  }
+  .footer-top {
+    flex-direction: row;
+    padding-bottom: 50px;
+  }
+
+  .footer-menu-list {
+    gap: 24px;
+    flex-direction: row;
+
+    align-items: center;
+  }
+
+  .footer-bottom {
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .footer-contacts {
+    margin: 0;
+  }
+  .footer-input {
+    width: 233px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -284,5 +342,23 @@
   }
   .made-item {
     align-items: unset;
+  }
+  /* loved */
+  .loved {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .loved-list {
+    gap: 28px;
+  }
+
+  .loved-item {
+    width: calc((100% - 56px) / 3);
+    padding: 56px 24px 24px 24px;
+  }
+  .footer-form-btn {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
