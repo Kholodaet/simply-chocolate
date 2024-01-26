@@ -27,9 +27,142 @@
   .products-item {
     width: calc((100% - 32px) / 2);
   }
+  .header-menu-list {
+    display: flex;
+  }
+  .header-social-list {
+    display: flex;
+  }
+  .header-menu-link {
+    display: flex;
+  }
+  .header-logo {
+    margin-right: 83px;
+  }
 
   /* -------------------------------- */
   /* sellers */
+
+  /* hero */
+
+  .hero-container {
+    padding: 670px 40px 40px 40px;
+  }
+
+  .hero-title {
+    font-size: 28px;
+  }
+  .hero-buy-btn,
+  .hero-made-btn {
+    padding: 14px 40px;
+  }
+
+  .hero-down-btn {
+    margin-left: auto;
+  }
+
+  /*  */
+
+  .header-soc-list,
+  .header-menu-list {
+    display: flex;
+  }
+  .menu-open-btn,
+  .mob-menu {
+    display: none;
+  }
+  .mobile-menu-open {
+    display: none;
+  }
+
+  .mobile-menu-open {
+    padding: 16px 0;
+    line-height: 0;
+    background-color: transparent;
+    border: none;
+    margin-left: auto;
+    flex-shrink: 0;
+  }
+
+  .mobile-menu-open-icon {
+    fill: var(--color-grey);
+  }
+
+  .hero-container {
+    padding: 670px 40px 40px 40px;
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4)
+      ),
+      url(../images/cholocate-bg-tab.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .hero-container {
+      background-image: linear-gradient(
+          rgba(17, 17, 17, 0) 0%,
+          rgba(17, 17, 17, 0.4)
+        ),
+        url(../images/chocolate-bg-tablet-2x.jpg);
+    }
+  }
+  /* sellers */
+  .sellers {
+    padding-top: 100px;
+  }
+  .sellers-title {
+    margin-bottom: 50px;
+  }
+
+  .sellers-item {
+    width: calc((100% - 16px) / 2);
+  }
+  /*  */
+  .mobile-container {
+    display: none;
+  }
+  /* features */
+  .features {
+    padding: 50px 32px;
+  }
+
+  .features-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 44px;
+  }
+  .features-item {
+    width: calc ((100% - 88px) / 2);
+  }
+  /* taste */
+
+  .taste {
+    padding-top: 100px;
+  }
+
+  .taste-title {
+    max-width: 412px;
+    font-size: 24px;
+  }
+
+  .taste-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    flex-direction: unset;
+  }
+  .taste-item {
+    width: calc((100% - 32px) / 2);
+  }
+
+  /* made */
+
+  .made-img {
+    width: 614px;
+    height: 400px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -53,4 +186,103 @@
   }
 
   /* hero */
+
+  .hero-container {
+    padding: 380px 40px 40px 40px;
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4)
+      ),
+      url(../images/chocolate-hero.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .hero-container {
+      background-image: linear-gradient(
+          rgba(17, 17, 17, 0) 0%,
+          rgba(17, 17, 17, 0.4)
+        ),
+        url(../images/chocolate-bg-hero-2x.jpg);
+    }
+  }
+  .sellers {
+    padding-top: 120px;
+  }
+
+  .sellers-item {
+    width: calc((100% - 32px) / 3);
+  }
+
+  /* features  */
+
+  .features {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .features-list {
+    display: flex;
+    padding-left: 18px;
+    padding-right: 18px;
+    gap: 88px;
+    flex-direction: row;
+  }
+  .features-item {
+    width: calc((100% - 88px * 2) / 3);
+    position: relative;
+  }
+
+  .features-item:not(:last-child)::after {
+    content: "";
+    width: 1px;
+    height: 124px;
+    right: -44px;
+    top: 0;
+    position: absolute;
+    background-color: #ffffff;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  /* taste */
+
+  .taste {
+    padding-top: 120px;
+  }
+  .taste-title {
+    max-width: 412px;
+    font-size: 24px;
+  }
+
+  .taste-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 32px;
+  }
+
+  .taste-item {
+    width: calc((100% - 32px * 3) / 4);
+  }
+  /* made */
+
+  .made-img {
+    width: 600px;
+    height: 400px;
+  }
+
+  .made {
+    padding-top: 120px;
+  }
+
+  .made-title {
+    margin-bottom: 50px;
+  }
+
+  .made-wrap {
+    flex-direction: unset;
+  }
+  .made-item {
+    align-items: unset;
+  }
 }

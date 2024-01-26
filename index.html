@@ -21,12 +21,14 @@
     <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
           <a class="header-logo" href="./index.html"
             ><span class="header-logo-italic">SIMPLY</span>CHOCOLATE
-           <svg class="icon icon-chocolate" width="24" height="24"><use href="./images/icons.svg#icon-chocolate"></use></svg>
+            <svg class="icon icon-chocolate" width="24" height="24">
+              <use href="./images/icons.svg#icon-chocolate"></use>
+            </svg>
           </a>
           <ul class="header-menu-list">
             <li class="header-menu-item">
@@ -43,102 +45,288 @@
           </ul>
         </nav>
         <ul class="header-social-list">
-            <li class="header-social-item"><a href="www.facebook.com">
-                <svg class="icon icon-facebook" width="24" height="24"><use href="./images/icons.svg#icon-facebook"></use></svg>
-            </a></li>
-            <li class="header-social-item"><a href="www.instagram.com"><svg class="icon icon-instagram" width="24" height="24"><use href="./images/icons.svg#icon-instagram"></use></svg></a></li>
-            <li class="header-social-item"><a href="www.twitter.com"><svg class="icon icon-twitter" width="24" height="24"><use href="./images/icons.svg#icon-twitter"></use></svg></a></li>
+          <li class="header-social-item">
+            <a href="www.facebook.com">
+              <svg class="icon icon-facebook" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header-social-item">
+            <a href="www.instagram.com"
+              ><svg class="icon icon-instagram" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use></svg
+            ></a>
+          </li>
+          <li class="header-social-item">
+            <a href="www.twitter.com"
+              ><svg class="icon icon-twitter" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use></svg
+            ></a>
+          </li>
         </ul>
-    </header> -->
+        <button type="button" class="menu-open-btn">
+          <svg
+            class="mobile-menu-open-icon"
+            aria-label="mobile-menu-open"
+            width="24"
+            height="24"
+            stroke="var(--color-grey)"
+          >
+            <use href="./images/icons.svg#mobile-menu-open"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mob-menu is-open">
+        <div>
+          <button type="button" class="menu-close-btn">X</button>
+          <nav>
+            <ul class="mob-menu-list">
+              <li class="mob-menu-item">
+                <a href="" class="mob-menu-link">Home</a>
+              </li>
+              <li class="mob-menu-item">
+                <a href="https://www.google.com/" class="mob-menu-link"
+                  >How it’s made?</a
+                >
+              </li>
+              <li class="mob-menu-item">
+                <a href="" class="mob-menu-link">Chocolate is loved</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <ul class="mob-soc-list">
+          <li class="mob-soc-item">
+            <a
+              class="mob-soc-link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg width="24" height="24" class="header-soc-icon">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-soc-item">
+            <a
+              class="mob-soc-link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg width="24" height="24" class="mob-soc-icon">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-soc-item">
+            <a
+              class="mob-soc-link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg width="24" height="24" class="header-soc-icon">
+                <use href="./images/icons.svg#icon-twitter"></use></svg
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </header>
     <main>
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">
-            Treat yourself or a loved one to our finest ingredients for a moment
-            of pure delight!
+            Treat yourself or a loved one to<br />
+            our finest ingredients for a moment of pure delight!
           </h1>
-
           <div class="hero-buttons">
             <button type="button" class="hero-buy-btn">Buy now</button>
-            <a href="" class="hero-made-btn">How it’s made</a>
-            <a href="" class="hero-down-btn">scroll down </a>
-            <a class="scroll" href=""
-              ><svg class="icon icon-scroll" width="22" height="22">
-                <use href="./images/icons.svg#icon-scroll"></use></svg
-            ></a>
+            <a href="#made" class="hero-made-btn">How it’s made</a>
+            <a href="" class="hero-down-btn">scroll down</a>
           </div>
         </div>
       </section>
-      <!-- <section class="features">
-<div class="container">
-<h2 class="visually-hidden">features</h2>
-<ul class="features-list">
-    <li class="features-item">
-      <div class="features-icon"><svg class="icon icon-fluent-emoji" width="32" height="32" ><use href="./images/icons.svg#icon-fluent-emoji"></use></svg></div>
-        <h3 class="features-subtitle">Unsurpassed taste</h3>
-        <p class="features-item-text">Crafted with the finest quality cocoa beans and a dedication to perfection, each bite is a decadent experience that simply cannot be matched. Savor the richness and complexity of our Unsurpassed Taste and discover a new level of chocolate bliss.</p>
-    </li>
-    <li class="features-item">
-      <div class="features-icon"><svg class="icon icon-coin" width="32" height="32" ><use href="./images/icons.svg#icon-coin"></use></svg></div>
-        <h3 class="features-subtitle">Affordable price</h3>
-        <p class="features-item-text">Indulge in high-quality chocolate without breaking the bank with Simply Chocolate's selection of affordable treats. Enjoy mouth-watering truffles and velvety chocolate bars without sacrificing taste or quality. Browse our selection and indulge in affordable luxury today.</p>
-    </li>
-    <li class="features-item">
-      <div class="features-icon"><svg class="icon icon-spoon" width="32" height="32" ><use href="./images/icons.svg#icon-spoon"></use></svg></div>
-        <h3 class="features-subtitle">Own production</h3>
-        <p class="features-item-text">We take pride in our own production process, ensuring that every step is carefully crafted to perfection. From selecting the finest ingredients to handcrafting each piece, our attention to detail is evident in every bite.</p>
-      
-    </li>
-</ul>
-</div>
-    </section> -->
-      <!-- <section class="taste">
-  <div class="container">
-    <h2 class="taste-title section-title">IT ALL ADDS UP TO ONE EXCEPTIONAL <span>TASTE</span>  SENSATION</h2>
-    <ul class="taste-list">
-      <li class="taste-item">
-        <img class="taste-img" src="./images/chocalate.png" alt="milk chocolate">
-        <h3 class="taste-subtitle">MILK CHOCOLATE</h3>
-      </li>
-      <li class="taste-item">
-        <img class="taste-img" src="./images/milk.png" alt="milk botle">
-        <h3 class="taste-subtitle">MILK</h3>
-      </li>
-      <li class="taste-item">
-        <img class="taste-img" src="./images/nuts.png" alt="nuts">
-        <h3 class="taste-subtitle">NUTS</h3>
-      </li>
-      <li class="taste-item">
-        <img class="taste-img" src="./images/pises.png" alt="beans chocolate">
-        <h3 class="taste-subtitle">SEMI - SWEET CHOCOLATE</h3>
-      </li>
-      <li class="taste-item">
-        <img class="taste-img" src="./images/cacao.png" alt="cacoa">
-        <h3 class="taste-subtitle">CACAO</h3>
-      </li>
-      <li class="taste-item">
-        <img class="taste-img" src="./images/raspberry.png" alt="berry">
-        <h3 class="taste-subtitle">RASPBERRY</h3>
-      </li>
-      <li class="taste-item">
-        <img class="taste-img" src="./images/coconut.png" alt="coconut">
-        <h3 class="taste-subtitle">COCONUT OIL</h3>
-      </li>
-    </ul>
-  </div>
-
-</section> -->
-      <!-- <section class="made" id="made">
+      <section class="features">
         <div class="container">
-          <h2 class="made-title section-title"> how it’s<span>made?</span></h2>
+          <h2 class="visually-hidden">features</h2>
+          <ul class="features-list">
+            <li class="features-item">
+              <div class="features-icon">
+                <svg class="icon icon-fluent-emoji" width="32" height="32">
+                  <use href="./images/icons.svg#icon-fluent-emoji"></use>
+                </svg>
+              </div>
+              <h3 class="features-subtitle">Unsurpassed taste</h3>
+              <p class="features-item-text">
+                Crafted with the finest quality cocoa beans and a dedication to
+                perfection, each bite is a decadent experience that simply
+                cannot be matched. Savor the richness and complexity of our
+                Unsurpassed Taste and discover a new level of chocolate bliss.
+              </p>
+            </li>
+            <li class="features-item">
+              <div class="features-icon">
+                <svg class="icon icon-coin" width="32" height="32">
+                  <use href="./images/icons.svg#icon-coin"></use>
+                </svg>
+              </div>
+              <h3 class="features-subtitle">Affordable price</h3>
+              <p class="features-item-text">
+                Indulge in high-quality chocolate without breaking the bank with
+                Simply Chocolate's selection of affordable treats. Enjoy
+                mouth-watering truffles and velvety chocolate bars without
+                sacrificing taste or quality. Browse our selection and indulge
+                in affordable luxury today.
+              </p>
+            </li>
+            <li class="features-item">
+              <div class="features-icon">
+                <svg class="icon icon-spoon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-spoon"></use>
+                </svg>
+              </div>
+              <h3 class="features-subtitle">Own production</h3>
+              <p class="features-item-text">
+                We take pride in our own production process, ensuring that every
+                step is carefully crafted to perfection. From selecting the
+                finest ingredients to handcrafting each piece, our attention to
+                detail is evident in every bite.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="taste">
+        <div class="container">
+          <h2 class="taste-title section-title">
+            IT ALL ADDS UP TO ONE EXCEPTIONAL <span>TASTE</span> SENSATION
+          </h2>
+          <ul class="taste-list">
+            <li class="taste-item">
+              <img
+                srcset="
+                  ./images/taste-img1-1x.png 1x,
+                  ./images/taste-img1-2x.png 2x
+                "
+                class="taste-img"
+                src="./images/taste-img1-1x.png"
+                alt="milk chocolate"
+              />
+              <h3 class="taste-subtitle">MILK CHOCOLATE</h3>
+            </li>
+            <li class="taste-item">
+              <img
+                srcset="
+                  ./images/taste-img2-1x.png 1x,
+                  ./images/taste-img2-2x.png 2x
+                "
+                class="taste-img"
+                src="./images/taste-img2-1x.png"
+                alt="milk botle"
+              />
+              <h3 class="taste-subtitle">MILK</h3>
+            </li>
+            <li class="taste-item">
+              <img
+                srcset="
+                  ./images/taste-img3-1x.png 1x,
+                  ./images/taste-img3-2x.png 2x
+                "
+                class="taste-img"
+                src="./images/taste-img3-1x.png"
+                alt="nuts"
+              />
+              <h3 class="taste-subtitle">NUTS</h3>
+            </li>
+            <li class="taste-item">
+              <img
+                srcset="
+                  ./images/taste-img4-1x.png 1x,
+                  ./images/taste-img4-2x.png 2x
+                "
+                class="taste-img"
+                src="./images/taste-img4-1x.png"
+                alt="beans chocolate"
+              />
+              <h3 class="taste-subtitle">SEMI - SWEET CHOCOLATE</h3>
+            </li>
+            <li class="taste-item">
+              <img
+                srcset="
+                  ./images/taste-img5-1x.png 1x,
+                  ./images/taste-img5-2x.png 2x
+                "
+                class="taste-img"
+                src="./images/taste-img5-1x.png"
+                alt="cacoa"
+              />
+              <h3 class="taste-subtitle">CACAO</h3>
+            </li>
+            <li class="taste-item">
+              <img
+                srcset="
+                  ./images/taste-img6-1x.png 1x,
+                  ./images/taste-img6-2x.png 2x
+                "
+                class="taste-img"
+                src="./images/taste-img6-1x.png"
+                alt="berry"
+              />
+              <h3 class="taste-subtitle">RASPBERRY</h3>
+            </li>
+            <li class="taste-item">
+              <img
+                srcset="
+                  ./images/taste-img7-1x.png 1x,
+                  ./images/taste-img7-2x.png 2x
+                "
+                class="taste-img"
+                src="./images/taste-img7-1x.png"
+                alt="coconut"
+              />
+              <h3 class="taste-subtitle">COCONUT OIL</h3>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="made" id="made">
+        <div class="container">
+          <h2 class="made-title section-title">how it’s<span>made?</span></h2>
           <div class="made-wrap">
-            <img
-              src="./images/cooking.png"
-              alt="liquid chocolate"
-              width="600"
-              height="400"
-              class="made-img"
-            />
+            <picture>
+              <source
+                srcset="
+                  ./images/made-dekstop-1x.jpg  1x,
+                  ./images/made-deksctop-2x.jpg 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./images/made-tablet-1x.jpg 1x,
+                  ./images/made-tablet-2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/made-imagephone-1x.jpg  1x,
+                  ./images/made-image-phone-2x.jpg 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="./images/made-imagephone-1x.jpg"
+                alt="liquid chocolate"
+                width="335"
+                height="500"
+                class="made-img"
+              />
+            </picture>
             <div class="made-content">
               <h3 class="made-subtitle">
                 Try our chocolates today and discover the perfect balance of
@@ -179,7 +367,8 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
+      -->
       <section class="products">
         <div class="container">
           <h2 class="products-title section-title">
